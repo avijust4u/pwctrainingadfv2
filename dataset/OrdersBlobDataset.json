@@ -13,7 +13,7 @@
 			},
 			{
 				"name": "orderDate",
-				"type": "String"
+				"type": "DateTime"
 			},
 			{
 				"name": "customer",
@@ -29,11 +29,11 @@
 			},
 			{
 				"name": "units",
-				"type": "String"
+				"type": "Int32"
 			},
 			{
 				"name": "amount",
-				"type": "String"
+				"type": "Int32"
 			},
 			{
 				"name": "remarks",
