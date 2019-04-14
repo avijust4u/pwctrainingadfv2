@@ -1,0 +1,59 @@
+{
+	"name": "OrdersBlobDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InternetOrdersBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "orderId",
+				"type": "String"
+			},
+			{
+				"name": "orderDate",
+				"type": "String"
+			},
+			{
+				"name": "customer",
+				"type": "String"
+			},
+			{
+				"name": "billingAddress",
+				"type": "String"
+			},
+			{
+				"name": "shippingAddress",
+				"type": "String"
+			},
+			{
+				"name": "units",
+				"type": "String"
+			},
+			{
+				"name": "amount",
+				"type": "String"
+			},
+			{
+				"name": "remarks",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"quoteChar": "\"",
+				"nullValue": "\\N",
+				"encodingName": null,
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"fileName": "internet-orders.csv",
+			"folderPath": "datacontainers"
+		}
+	}
+}
